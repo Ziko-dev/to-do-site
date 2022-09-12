@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(./img/oksana-taran-BOYwwwa1oOk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    background-origin: border-box;
+    width: 100%;
+    height: auto;
+}
+.div{
+    background-color: rgba(218, 16, 16, 0.886);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 2% auto;
+    padding: 35px 0;
+    box-shadow: 1px 0px 3px 0px #ffffff47;
+    border-radius: 2px;
+    transition: .7s ease-in-out;
+}
+.containerHeader{
+    width: 50%;
+    height: auto;
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-size: 24px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-left: 20px;
+
+}
+.btncont{
+    width: 50%;
+    height: auto;
+   
+}
+.container-for-input{
+    display: grid;
+    place-items: center;
+    width: 80%;
+    margin: 5% auto;
+    height: 180px;
+   /* background: #403b3bcf;*/
+}
+.to-do-h1{
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+#input{
+width: 70%;
+outline: none;
+border:1px solid white;
+height: 40px;
+border-radius: 2px;
+
+}
+#input::placeholder{
+    text-align: center;
+}
+#btn{
+outline: none;
+border: none;
+height: 30px;
+width: 30%;
+background-color: rgb(59 231 250 / 93%);
+color: #fff;
+border-radius: 2px;
+cursor: pointer;
+}
+
+.removebtn{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: rgb(29, 49, 9);
+    outline: none;
+    font-family: sans-serif;
+    border: none;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 17px;
+    float: right;
+    text-transform: capitalize;
+}
+
+.item-character{
+    color: #00ffd8;
+    font-size: 13px;
+}
+
+.dateHeader{
+    color: #fff2ba;
+    font-size: 16px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.no-todo{
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff2ba;
+    color: black;
+    font-size: 20px;
+}
+
+@media(max-width:800px){
+    .container-for-input{
+        width: 95%;
+    }
+    .to-do-h1 {
+        font-size: 17px;
+    }
+    #input{
+        height: 35px;
+        width: 90%;
+    }
+    .heading{font-size: 14px;}
+    .div{
+        margin: 5% auto;
+        padding: 18px 0;
+        background-color: rgb(218 16 16 / 96%);
+    }
+    .dateHeader{
+        font-size: 8px;
+        margin-top: 6px;
+        height: 20px;
+    }
+    .removebtn {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
