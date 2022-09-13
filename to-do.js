@@ -2,8 +2,9 @@ let input = document.getElementById("input");
 let btn = document.getElementById("btn");
 
 let itemC = document.querySelector(".item-character");
-const sound = new Audio("sound/bing.aac");
-//let noTodo = document.querySelector(".no-todo")
+
+const sound = new Audio("sound/binge.mp3");
+
 
 
 input.addEventListener("focus", function(e){
@@ -94,7 +95,7 @@ setTimeout(() => {
 }, 0);
 
 sound.play()
-Math.random(div.style.backgroundColor);
+
  
 removeBtn.addEventListener("click", function(e){
         div.remove()
